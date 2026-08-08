@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.hdclark.weddingbingo"
-    compileSdk = 37
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.hdclark.weddingbingo"
         minSdk = 23
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
     }
