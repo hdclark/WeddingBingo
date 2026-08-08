@@ -28,4 +28,4 @@ GitHub Actions is the supported build environment for this project. The workflow
 2. The workflow runs JVM unit tests and compiles `app-debug.apk`.
 3. Download the `wedding-bingo-debug-apk` artifact from the completed workflow run.
 
-The CI toolchain uses Android Gradle Plugin 9.3.0, Gradle 9.5.0, JDK 17, compile/target SDK 37, and Android Build Tools 36.0.0.
+The CI toolchain uses Android Gradle Plugin 9.3.0, Gradle 9.5.0, JDK 17, compile/target SDK 36, and Android Build Tools 36.0.0.
