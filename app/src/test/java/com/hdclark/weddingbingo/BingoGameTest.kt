@@ -36,7 +36,7 @@ class BingoGameTest {
     fun everyWinningLineIsRecognized() {
         BingoGame.WINNING_LINES.forEachIndexed { lineIndex, line ->
             val game = BingoGame(random = Random(lineIndex))
-            line.filter { it != BingoGame.FREE_INDEX }.forEach(game::toggle)
+            line.filter { it != BingoGame.FREE_INDEX }.forEach { game.toggle(it) }
             assertTrue("Winning line $lineIndex was not recognized", game.hasBingo())
         }
     }
@@ -44,7 +44,7 @@ class BingoGameTest {
     @Test
     fun fourSquaresWithoutAFreeSpaceDoNotWin() {
         val game = BingoGame(random = Random(23))
-        intArrayOf(0, 1, 2, 3).forEach(game::toggle)
+        intArrayOf(0, 1, 2, 3).forEach { game.toggle(it) }
         assertFalse(game.hasBingo())
     }
 
